@@ -3,7 +3,7 @@ import Panel from 'react-bootstrap/lib/Panel'
 import axios from 'axios'
 import InsertForm from './InsertForm';
 import DeleteForm from './DeleteForm';
-import ReadForm from './ReadForm';
+//import ReadForm from './ReadForm';
 import UpdateForm from './UpdateForm';
 import ReadAllForm from './ReadAllForm';
 
@@ -47,7 +47,6 @@ export default class CustomerDetails extends Component {
       return(<ReadAllForm/>)
     else if(this.props.val==4)
       return(<UpdateForm/>)
-    else if(this.props.val==5)
-      return(<ReadForm/>)
+  
   }
 }
