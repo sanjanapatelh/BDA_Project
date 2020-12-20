@@ -1,0 +1,29 @@
+[{
+	"id": 1,
+	"name": "Insert Data",
+	"email": "Enter Details",
+	"phone": ""
+}, {
+	"id": 2,
+	"name": "Delete Data",
+	"email": "",
+	"phone": ""
+}, {
+	"id": 3,
+	"name": "Read Data",
+	"email": "",
+	"phone": ""
+},
+{
+	"id": 4,
+	"name": "Update Data",
+	"email": "tyrion@test.com",
+	"phone": "123412345"
+},
+{
+	"id": 5,
+	"name": "Search",
+	"email": "",
+	"phone": ""
+}
+]
