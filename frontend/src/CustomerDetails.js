@@ -3,9 +3,10 @@ import Panel from 'react-bootstrap/lib/Panel'
 import axios from 'axios'
 import InsertForm from './InsertForm';
 import DeleteForm from './DeleteForm';
-//import ReadForm from './ReadForm';
+import Graph from './Graph';
 import UpdateForm from './UpdateForm';
 import ReadAllForm from './ReadAllForm';
+  import {Link } from "react-router-dom";
 
 //This Component is a child Component of Customers Component
 export default class CustomerDetails extends Component {
@@ -47,6 +48,24 @@ export default class CustomerDetails extends Component {
       return(<ReadAllForm/>)
     else if(this.props.val==4)
       return(<UpdateForm/>)
-  
+    else if(this.props.val==5)
+      return(
+
+          <div className="customerdetails">
+            <Panel bsStyle="info" className="centeralign">
+              <Panel.Heading>
+                <Panel.Title componentClass="h3">Graph Analyis</Panel.Title>
+              </Panel.Heading>
+              <Panel.Body>
+              <Link to="/graph"><button>
+               Click to get graphs.......
+             </button>
+             </Link>
+              </Panel.Body>
+            </Panel>
+          </div>
+      )
+
+
   }
 }

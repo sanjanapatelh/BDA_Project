@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Customers from './Customers'
+import Customers from './Customers';
+import Find from './Find';
+import Graph from './Graph';
+
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 
@@ -13,14 +16,18 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Simple React App</h1>
+        <h1 className="App-title">Analysis Of Malicious And Benign Urls</h1>
+          <img src={`${process.env.PUBLIC_URL}/images/m2.jpeg`} className="App-logo" alt="logo" />
+
+
         </header>
           <Switch>
                 <Route exact path= "/" render={() => (
                   <Redirect to="/customerlist"/>
                 )}/>
                  <Route exact path='/customerlist' component={Customers} />
+                 <Route exact path='/find' component={Find} />
+                 <Route exact path='/graph' component={Graph} />
           </Switch>
       </div>
     </Router>
